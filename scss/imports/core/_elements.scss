@@ -1,0 +1,104 @@
+.logo {
+    margin-right: 100px;
+    span {
+        color:$black;
+        font-size: 18px;
+        font-family: "Neue Haas Grotesk";
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 600;
+    }
+}
+.btn {
+    padding:8px 12px;
+    font-size: 12px;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: center;
+    appearance: none;
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: 1px;
+
+}
+.form-btn {
+    border:none;
+    outline:0;
+    color:$white;
+    text-transform: uppercase;
+    background-color: $black;
+    letter-spacing: 2px;
+    font-size: 12px;
+    height: 45px;
+    transition: background .3s;
+    &:hover {
+        background:rgba(0,0,0,0.75);
+    }
+}
+.back {
+    width: 10px;
+    transform: rotate(-180deg);
+    vertical-align: middle;
+  }
+.btn--block {
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+}
+.btn--link {
+    background-color: #fff;
+    color: #000000;
+    font-weight: 600;
+}
+
+.fieldset{
+    display: flex;
+    .field__input-wrapper {
+        position: relative;
+        width: 100%;
+        padding:0 9px 9px 0;
+        .field__input {
+            padding: 12px;
+            border-radius: 3px;
+            outline: 0;
+            border: 1px solid #d9d9d9;
+            &.field-full{
+                width: 100%;
+            }
+        }
+    }
+}
+.btn-step-footer{
+    margin-bottom: 18px;
+    font-weight: 600;
+    width: 50%;
+}
+.mh{
+    height: 100vh !important;
+}
+.form {
+    padding:40px;
+    &:not(:last-child){
+        border-right: 1px solid #d9d9d9;
+    }
+    &__title {
+        font-size: 20px;
+        text-align: center;
+        letter-spacing: 1px;
+        font-family: "Saol Display";
+        margin-bottom: 10px;
+    }
+    &__body {
+        .field__input{
+            width: 100%;
+        }
+    }
+    &__actions {
+        .btn {
+            width: 50%;
+            font-weight: 600;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}

@@ -1,0 +1,205 @@
+.cart-page {
+    .page-banner{
+        background-image: url(/img/Banner-cart.jpg);
+        height: 28vw;
+        padding: 95px 0 59px;
+        text-align: center;
+        background-size: cover;
+        background-position: center center;
+        h1{
+            margin: auto;
+            font-size: 42px;
+            font-weight: 600;
+            font-family: 'Saol Display';
+            color:#fff;
+        }
+        h2{
+            margin: auto;
+            font-size: 24px;
+            font-weight: 600;
+            font-family: 'Saol Display';
+            color:#fff;
+            margin-bottom: 20px;
+        }
+    }
+    .form-cart{
+        td{
+            padding: 27px 10px 17px;
+            vertical-align: top;
+        }
+    }
+    .cart {
+        padding:30px 0;
+
+    }
+    .cart__count {
+        margin-bottom: 30px;
+        position: relative;
+        padding-left: 17px;
+        text-transform: uppercase;
+        a{
+            color:$black;
+        }
+        &::after{
+            content:'';
+            position: absolute;
+            background-image: url(/img//icon-cart.svg);
+            top:50%;
+            left:0;
+            transform: translateY(-50%);
+            width: 12px;
+            height: 14px;
+            background-size: contain;
+            vertical-align: middle;
+        }
+    }
+    .table {
+        text-align: left;
+        &--cart{
+            border-top:1px solid #f0f0f0;
+        }
+        &__image{
+            width: 22%;
+            padding-left: 0;
+            img{
+                margin-bottom: 10px;
+            }
+        }
+        &__name {
+            width: 46%;
+            h5{
+                margin: 0;
+                font-size: 10px;
+                font-weight: normal;
+                text-transform: uppercase;
+                padding:10px 0;
+            }
+            a{
+                color:inherit;
+                font-size: 14px;
+            }
+            .edit {
+                padding:22px 0 0;
+                color: #969696;
+            }
+        }
+        &__quantity {
+            h6{
+                font-size: 12px;
+                font-weight: normal;
+                padding:10px 0;
+                color:#969696;
+            }
+            .select {
+                max-width: 58px;
+                /* width: 100px; */
+                width: 58px;
+                cursor: pointer;
+                padding: 8px;
+                position: relative;
+            }
+            .button {
+                position: relative;
+                width: 32px;
+                height: 32px;
+                background: none;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 2px;
+                    left: -30px;
+                    width: 1px;
+                    height: 90%;
+                    background-color: #c8c8c8;
+                }
+                &::after{
+                    content:'';
+                    position: absolute;
+                    top: 4px;
+                    left:-20px;
+                    width: 8px;
+                    height: 8px;
+                    border: 0;
+                    border-bottom: 1px solid #000;
+                    border-right: 1px solid #000;
+                    -webkit-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                    -webkit-transform-origin: center center;
+                    -ms-transform-origin: center center;
+                    transform-origin: center center;
+                    -webkit-transition: all .3s;
+                    -o-transition: all .3s;
+                    transition: all .3s;
+                }
+            }
+        }
+        &__total {
+            h6{
+                font-size: 12px;
+                font-weight: normal;
+                padding:10px 0;
+                color:#969696;
+            }
+            .price {
+                display: block;
+                padding-top:5px;
+                font-family: "Saol Display";
+            }
+        }
+    }   
+    .cart-right {
+        padding-top: 31px;
+        margin-bottom: 30px;
+        .order-summary {
+            padding:15px;
+            text-align: center;
+            h4{
+                margin-bottom: 17px;
+                font-size: 12px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+            h3{
+                margin-bottom: 17px;
+                font-size: 26px;
+                font-weight: normal;
+                span{
+                    display: inline-block;
+                    margin-right: 11px;
+                    vertical-align: middle;
+                    font-size: 12px;
+                    font-weight: normal;
+                }
+            }
+            p{
+                margin-bottom: 18px;
+                font-size: 12px;
+                font-weight: normal;
+                color: #969696;
+            }
+            .form__actions{
+                text-align: center;
+                .btn {
+                    width: 100%;
+                    height: 45px;
+                    margin: 0 0 10px;
+                }
+                a{
+                    display: inline-block;
+                    margin: 12px 0 0;
+                    text-decoration: none;
+                    color: #969696;
+                    letter-spacing: 1px;
+                    -webkit-transition: color 0.3s;
+                    -o-transition: color 0.3s;
+                    transition: color 0.3s;
+                    &:hover {
+                        color:$black;
+                    }
+                }
+            }
+        }
+    }
+}

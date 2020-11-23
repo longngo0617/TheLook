@@ -1,0 +1,172 @@
+.product {
+    .filters {
+        &__title {
+            font-family: "Neue Haas Grotesk";
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            padding: 20px 0;
+        }
+        .category {
+            &-link{
+                color:$black;
+                display: block;
+                font-family: 'Neue Haas Grotesk';
+                text-transform: uppercase;
+                font-size:16px;
+                width: 100%;
+            }
+            &-link:not(:last-child){
+                padding-bottom: 14px;
+            }
+        }
+        .color {
+            &-check {
+                display: flex;
+                align-items: center;
+                margin-bottom: 15px;
+                #check-color:checked  {
+                    background:$black;
+                    &:after {
+                        opacity: 1;
+                    }
+                }
+                &-input {
+                    position: relative;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 1px;
+                    margin-right: 20px;
+                    background:#ddd;
+                    cursor: pointer;
+                    transition: background .3s;
+                    &:after {
+                        content: "";
+                        position: absolute; 
+                        width: 10px;
+                        height: 13px;
+                        border-right:2px solid #fff;
+                        border-bottom: 2px solid #fff;
+                        left:50%;
+                        top:50%;
+                        transform: translate(-50%,-50%) rotateZ(40deg);
+                        opacity: 0;
+                        transition: opacity .3s;
+                    }
+                }
+                &-label {
+
+                }
+            }
+            .clear{
+                width: 100px;
+                height: 20px;
+                background: #ddd;
+                position: relative;
+                span{
+                    position: absolute;
+                    content:"";
+                    width: 10px;
+                    height:2px;
+                    top:10px;
+                    left:8px;
+                    margin-bottom: 3px;
+                    display: block;
+                    background:$black;
+                    &:first-child {
+                        transform: rotate(-45deg);
+                    }
+                    &:last-child {
+                        transform: rotate(-135deg);
+                    }
+                }
+            }
+        }
+        .short {
+            &-link {
+                color:black;
+                padding:10px 0;
+                display: block;
+            }
+        }
+    }
+    &-item {
+        margin-top:20px;
+        &__image {
+            position: relative;
+            display: block;
+            span{
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top:0;
+                left:0;
+                background-size: cover;
+                background-position: center center;
+                opacity: 0;
+                -webkit-transition: opacity .3s;
+                -o-transition: opacity .3s;
+                transition: opacity .3s;
+            }
+            &:hover {
+                span {
+                    opacity: 1;
+                }
+            }
+        }
+        &__info {
+            text-align: center;
+            .product__name {
+                color:black;
+                font-weight: 600;
+                display: block;
+                position: relative;
+                padding:10px;
+                &:after {
+                    content:"";
+                    position: absolute;
+                    width: 100%;
+                    height: 1px;
+                    background: $black;
+                    bottom:0;
+                    left:50%;
+                    transform: translateX(-50%);
+                    opacity: 0;
+                    transition: width 0.4s ,opacity 0.3s ;
+                }
+                &:hover {  
+                    &:after {
+                        opacity: 1;
+                        width: 80%;
+                    }
+                }
+            }
+            .price {
+                margin-top: 5px;
+            }
+        }
+    }
+    .page-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin:30px 0;
+        .pagination,.back-to-top{
+            display: inline-block;
+            a{
+                color: black;
+                float: left;
+                padding: 8px 16px;
+                text-decoration: none;
+                transition: background-color .3s;
+                border: 1px solid #ddd;
+                transition: background 0.3s ,color .5s;
+                &.active {
+                    background: #000;
+                    color:#fff;
+                }
+            }
+        }
+    }
+}

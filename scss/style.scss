@@ -1,0 +1,22 @@
+/* Core variables and mixins*/
+@import "imports/core/breakpoints.scss";
+@import "imports/core/bootstrap_mini";
+@import "imports/core/reset";
+@import "imports/core/variables";
+@import "imports/core/mixins";
+@import "imports/core/layouts";
+@import "imports/core/elements";
+@import "imports/core/libs";
+@import "imports/core/loading";
+
+/* Navigation, header, footer*/
+@import "imports/core/header";
+@import "imports/core/nav";
+@import "imports/core/footer";
+
+/* Pages*/
+@import "imports/pages/home";
+@import "imports/pages/product";
+@import "imports/pages/details";
+@import "imports/pages/cart";
+@import "imports/pages//checkout";

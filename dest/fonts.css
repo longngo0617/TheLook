@@ -1,0 +1,21 @@
+@font-face {
+    font-family:'SaolDisplay';
+    src: url(../fonts/SaolDisplay-Regular.woff2) format('woff2'),
+         url(../fonts/ProximaNova-Regular.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Neue Haas Grotesk';
+    src:url(../fonts/NeueHaasDisplay-Roman.woff2) format('woff2'),
+        url(../fonts/NeueHaasDisplay-Roman.woff) format('woff');
+}
+@font-face {
+    font-family: 'Neue Haas Grotesk Thin';
+    src: local('NeueHaasDisplay-Thin'),
+        url(../fonts/NeueHaasDisplay-Thin.woff2) format('woff2'),
+        url(../fonts/NeueHaasDisplay-Thin.woff) format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
